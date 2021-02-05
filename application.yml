@@ -1,0 +1,21 @@
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 20000
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 10000
+        readTimeout: 20000
+
+
+
+spring:
+  sleuth:
+    sampler:
+      probability: 1
