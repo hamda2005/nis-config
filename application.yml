@@ -19,3 +19,6 @@ spring:
   sleuth:
     sampler:
       probability: 1
+ cloud:
+        config:
+            fail-fast: false
